@@ -109,14 +109,11 @@ main {
    text-align: center;
    flex-direction: column;
    justify-content: center;
-   position: relative;
-   z-index: -1;
-   background-color: var(--off-white);
+   background-color: #e5e5e5;
 }
 
 main .main-first-container {
-   position: absolute;
-   top: 60px;
+   display: block;
    width: 100%;
    height: auto;
 }
@@ -132,6 +129,7 @@ main .main-figure-container {
    justify-items: center;
    margin: 0 auto;
    margin-bottom: 35px;
+   margin-top: 50px;
 }
 
 .main-text-container h2 {
@@ -151,123 +149,182 @@ main .main-figure-container {
    color: #757575;
    line-height: 1.8rem;
    text-align: center;
+   margin-bottom: 30px;
 }
 
-.exchange-tablesContainer {
-   width: 65%;
-   margin: 0 auto;
-   margin-top: 50px;
-   min-width: 110px;
-   max-width: 520px;
-   text-align: left;
-}
-
-.tableContainer {
-   display: flex;
-   flex-direction: column;
-}
-
-.tableContainer h3 {
-   font-size: 1.8rem;
-   font-weight: 700;
-   line-height: 2.3rem;
-   color: #ff9536;
-   margin-left: 12px;
-   margin-bottom: 12px;
-}
-
-.grid-tableContainer {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   border-radius: 8px;
+.main-table-container {
    font-family: "Inter", sans-serif;
-   grid-gap: 1.5px;
-}
-
-.grid-tableContainer div {
-   padding: 10px 12px;
    display: flex;
-   background-color: var(--just-white);
-}
-
-.grid-tableContainer div:nth-child(1) {
-   border-top-left-radius: 4px;
-}
-
-.grid-tableContainer div:nth-child(2) {
-   border-top-right-radius: 4px;
-}
-
-.grid-tableContainer div:nth-child(7) {
-   border-bottom-left-radius: 4px;
-}
-
-.grid-tableContainer div:nth-child(8) {
-   border-bottom-right-radius: 4px;
-}
-
-.grid-tableContainer div:nth-child(2n) {
    justify-content: center;
+   height: auto;
+   margin-bottom: 35px;
 }
 
-.grid-tableContainer div h4 {
-   font-size: 1.6rem;
+.main-table-title {
+   font-family: "DM Sans", sans-serif;
+   color: #ff9536;
+   font-weight: 700;
+   font-size: 1.8rem;
+   line-height: 2.344rem;
+   width: 60%;
+   padding-left: 15px;
+   text-align: left;
+   margin-bottom: 3px;
+}
+
+.main-grid-container {
+   display: grid;
+   grid-template: repeat(4, 1fr) / 101px 95px;
+   gap: 1.4px;
+}
+
+.main-grid-container div {
+   background: #ffffff;
+   display: flex;
+}
+
+.main-grid-container div:nth-child(1) {
+   border-radius: 8px 0px 0px 0px;
+}
+
+.main-grid-container div:nth-child(2) {
+   border-radius: 0px 8px 0px 0px;
+}
+
+.main-grid-container div:nth-child(7) {
+   border-radius: 0px 0px 0px 8px;
+}
+
+.main-grid-container div:nth-child(8) {
+   border-radius: 0px 0px 8px 0px;
+}
+
+.main-child {
    font-weight: 500;
-   line-height: 1.9rem;
+   font-size: 1.6rem;
+   line-height: 1.936rem;
+   padding: 10px 12px;
+   text-align: left;
    color: #b5b0ac;
 }
 
-.grid-tableContainer div h5 {
-   font-size: 1.4rem;
+.main-child-value {
+   justify-content: center;
+   align-items: center;
+   line-height: 1.694rem;
    font-weight: 400;
-   line-height: 1.7rem;
+   font-size: 1.4rem;
    color: #757575;
 }
 
-.grid-tableContainer div h5 span {
+.main-grid-container .down {
    display: inline-block;
-   margin-left: 10.5px;
-   width: 12px;
-   height: 8px;
-   background-image: url("./assets/trendingDown.svg");
-   background-position: center;
+   margin-left: 8px;
+   width: 15px;
+   height: 15px;
+   background-image: url(./assets/trendingDown.svg);
    background-repeat: no-repeat;
    background-size: cover;
-   color: #f5450d;
+   background-position: center;
 }
 
-.grid-tableContainer div:nth-child(4) h5 span {
+.main-grid-container .up {
    display: inline-block;
-   margin-left: 10.5px;
-   width: 12px;
-   height: 8px;
-   background-image: url("./assets/trendingUp.svg") !important;
-   background-position: center;
+   margin-left: 8px;
+   width: 15px;
+   height: 15px;
+   background-image: url(./assets/trendingUp.svg);
    background-repeat: no-repeat;
    background-size: cover;
-   color: #f5450d;
+   background-position: center;
 }
 
-.table-updateDate {
-   background-color: var(--soft-orange);
-   color: var(--warm-black);
-   padding: 8px;
-   text-align: center;
-   margin-top: 16px;
-   margin-bottom: 35px;
+.main-table-update {
+   margin-top: 6px;
+   width: 100%;
    border-radius: 8px;
-   width: 90%;
-   align-self: center;
+   background-color: var(--soft-orange);
+   font-weight: 500;
+   font-size: 1.2rem;
+   line-height: 1.452rem;
+   padding: 8px;
+   font-style: normal;
 }
 
-.table-updateDate p {
-   font-size: 1.2em;
-   font-weight: 400;
-   line-height: 1.45em;
+.main-commission-container {
+   display: flex;
+   justify-content: center;
+   height: auto;
+   margin-bottom: 40px;
 }
 
-.table-updateDate span {
-   font-size: 1.2em;
+.main-commission-title {
+   color: var(--sec-blue);
+   width: 60%;
+   padding-left: 15px;
+   margin-bottom: 3px;
+   text-align: left;
+   font-family: "DM", sans-serif;
+   font-size: 1.8rem;
+   font-style: normal;
    font-weight: 700;
-   line-height: 1.45em;
+   line-height: 23.44px;
+}
+
+.main-commission-grid {
+   display: grid;
+   grid-template: repeat(4, 1fr) / 101px 95px;
+   gap: 1.4px;
+}
+
+.main-commission-grid div {
+   background-color: #ffffff;
+   display: flex;
+}
+
+.main-commission-grid div:nth-child(1) {
+   border-radius: 8px 0px 0px 0px;
+}
+
+.main-commission-grid div:nth-child(2) {
+   border-radius: 0px 8px 0px 0px;
+}
+
+.main-commission-grid div:nth-child(7) {
+   border-radius: 0px 0px 0px 8px;
+}
+
+.main-commission-grid div:nth-child(8) {
+   border-radius: 0px 0px 8px 0px;
+}
+
+.grid-item {
+   font-weight: 500;
+   font-size: 1.6rem;
+   line-height: 1.936rem;
+   padding: 10px 12px;
+   text-align: left;
+   color: #b5b0ac;
+}
+
+.grid-item-value {
+   justify-content: center;
+   align-items: center;
+   line-height: 1.694;
+   font-weight: 400;
+   font-size: 1.4rem;
+   color: #757575;
+}
+
+.main-commission-update {
+   margin-top: 6px;
+   width: 100%;
+   border-radius: 8px;
+   background-color: var(--soft-blue);
+   font-weight: 500;
+   font-family: "Inter", sans-serif;
+   font-size: 1.2rem;
+   line-height: 1.452rem;
+   padding: 8px;
+   font-style: normal;
 }
