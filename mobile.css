@@ -461,3 +461,34 @@ main .main-figure-container {
    line-height: 1.8rem;
    color: #808080;
 }
+
+.main-image {
+   position: relative;
+   width: 100%;
+   height: 387px;
+}
+
+.main-image figure {
+   min-width: 320px;
+   max-width: 500px;
+   height: 387px;
+   background-image: url("./assets/bitcoinBaby.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.main-image h3 {
+   position: absolute;
+   margin: 0 auto;
+   right: 0;
+   left: 0;
+   text-align: center;
+   top: 64px;
+   font-size: 3.7rem;
+   font-family: "DM Sans", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+   line-height: 2.6rem;
+   color: var(--white);
+}
