@@ -398,11 +398,12 @@ main .main-figure-container {
 
 .benefits-grid-container {
    display: grid;
-   grid-template-rows: repeat(4, 1fr);
    height: auto;
-   padding: 0 5px;
-   align-items: center;
+   max-width: 500px;
+   margin: 0 auto;
+   grid-template-rows: repeat(4, 1fr);
    gap: 15px;
+   padding: 0 5px;
    border-radius: 10px;
 }
 
